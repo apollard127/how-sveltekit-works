@@ -22,12 +22,13 @@ h2 {
 a {
     color: tomato;
     text-decoration: none;
+
     &:hover {
         text-decoration: underline;
     }
 }
 
-button {
+.button {
     padding: 1em;
     background-color: tomato;
     color: white;
@@ -40,7 +41,7 @@ button {
 
     &:hover {
     text-decoration: underline;
-}
+    }
 }
 
 /*Utilities  */
