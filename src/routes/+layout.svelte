@@ -24,6 +24,6 @@
         padding-block: 6em; 
         padding-inline: 3em;
         margin-inline: auto;
-        
+        line-height: 1.5;
     }
 </style>

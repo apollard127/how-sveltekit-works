@@ -2,6 +2,7 @@
     box-sizing:border-box;
     margin: 0;
     padding: 0;
+    /* outline: 1px solid limegreen */
 }
 
 body {
@@ -29,6 +30,7 @@ a {
 }
 
 .button {
+    display: block;
     padding: 1em;
     background-color: tomato;
     color: white;
@@ -40,7 +42,10 @@ a {
     cursor: pointer;
 
     &:hover {
-    text-decoration: underline;
+        background-color: transparent;
+        color: tomato;
+        text-decoration: none;
+        outline: 0.25em solid tomato;
     }
 }
 

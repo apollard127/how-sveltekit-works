@@ -1,5 +1,5 @@
 <script>
-	export let logo = "Fallback"
+	export let logo = "My Fun Science"
 </script>
 
 <header>

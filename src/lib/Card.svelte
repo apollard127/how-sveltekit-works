@@ -6,19 +6,24 @@
 </script>
 
 <li class="bg-light">
+	<a href="/gallery/{post.slug}">
 	<img class="square" src="{featured_image}" alt="placeholder">
-	<div>
-		<h2>{@html title}</h2>
+	</a>
+		<div class="content flow">
+		<h2>
+			<a href="/gallery/{post.slug}">{@html title}</a>
+		</h2>
 		<p>{@html excerpt}</p>
-		<a class="button" href>{buttonText}</a>
+		<a class="button" href="/gallery/{post.slug}">{buttonText}</a>
 	</div>
 </li>
 
 <style>
+.content {
+	padding: 1.5em;
+}
 
-	div {
-		display: grid;
-		gap: 1em;
-		padding: 1.5em;
-	}
+.content div :global(* + *) {
+	margin-block-start: 1.5rem;
+}
 </style>
