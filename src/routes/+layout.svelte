@@ -6,7 +6,7 @@
 </script>
 <div class="wrapper">
 <Header logo="My Fun Science"/>
-<main>
+<main class="flow">
 <slot />
 </main>
 <Footer />
