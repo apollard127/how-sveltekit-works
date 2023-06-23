@@ -1,11 +1,21 @@
 <script>
     import '$lib/app.css'
     import Header from "$lib/Header.svelte";
-    import Footer from "$lib/Footer.svelte";
+    import MobileHeader from "$lib/MobileHeader.svelte";
+    import Footer from "$lib/Footer.svelte"; 
 
+
+let innerWidth
 </script>
+
+<svelte:window bind:innerWidth />
 <div class="wrapper">
+    {#if innerWidth > 767}
 <Header logo="My Fun Science"/>
+{:else}
+<Header logo="MFS"/>
+{/if}
+
 <main class="flow">
 <slot />
 </main>
@@ -20,7 +30,7 @@
     }
     main {
         width:  100%;
-        max-width: 64em;
+        max-width: var(--max-width);
         padding-block: 6em; 
         padding-inline: 3em;
         margin-inline: auto;

@@ -2,9 +2,10 @@
 	export let logo = "My Fun Science"
 </script>
 
-<header>
-	<div>		
-		<p><a href="/">{logo}</a></p>
+<header class="bg-accent">
+	<div class="inner">		
+		<div class="logo">
+			<a href="/">{logo}</a>
 		<nav>
 			<ul>
 				<li><a href="/">Home</a></li>
@@ -17,29 +18,18 @@
 </header>
 
 <style>
-	header {
-		background-color: tomato;
-		color: white;
-	}
-	
+
 	div {
-		max-width: 64em;
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-between;
 		align-items: center;
-		gap: 1.5em;
-		margin-inline: auto;
-		padding-block: 1.5em;
-		padding-inline: 3em;
+		gap: var(--size);
 	}
 	
-	p {
+	.logo {
 		font-size: 2rem;
 		font-weight: bold;
-	}
-	
-	p a {
-		text-decoration: none;
 	}
 		
 	ul {
@@ -48,7 +38,5 @@
 		list-style: none;
 	}
 	
-	a {
-		color: white;
-	}
+
 </style>

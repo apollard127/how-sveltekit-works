@@ -13,7 +13,7 @@
 		<h2>
 			<a href="/gallery/{post.slug}">{@html title}</a>
 		</h2>
-		<p>{@html excerpt}</p>
+		<div>{@html excerpt}</div>
 		<a class="button" href="/gallery/{post.slug}">{buttonText}</a>
 	</div>
 </li>
